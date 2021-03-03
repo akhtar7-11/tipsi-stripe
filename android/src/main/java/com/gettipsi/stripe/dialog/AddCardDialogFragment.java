@@ -195,6 +195,9 @@ public class AddCardDialogFragment extends DialogFragment {
       fromCard.getExpYear(),
       fromCard.getSecurityCode());
 
+    card.setAddressZip(fromCard.getZipCode());
+
+
     String errorMessage = Utils.validateCard(card);
     if (errorMessage == null) {
       if (CREATE_CARD_SOURCE) {

@@ -15,8 +15,17 @@ public class Utils {
             return "The expiration date that you entered is invalid";
         } else if (!card.validateCVC()) {
             return "The CVC code that you entered is invalid";
+        } else if (!validateZip(card)) {
+            return "The ZIP code that you entered is invalid  ";
         }
+
         return null;
     }
+
+        public static boolean validateZip(final Card card) {
+            String zip = card.getAddressZip();
+            return zip.matches("^\\d{5}$");
+        }
+
 
 }
