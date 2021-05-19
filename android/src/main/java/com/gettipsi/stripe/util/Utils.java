@@ -24,7 +24,7 @@ public class Utils {
 
         public static boolean validateZip(final Card card) {
             String zip = card.getAddressZip();
-            return zip.matches("^\\d{5}$");
+            return zip.matches("[a-zA-Z0-9]{5}$");
         }
 
 
