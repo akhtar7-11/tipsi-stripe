@@ -7,8 +7,8 @@
     android:orientation="vertical"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
-    android:paddingTop="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_horizontal_margin">
+    android:paddingTop="@dimen/cc_image_padding"
+    android:paddingBottom="@dimen/cc_image_padding">
 
     <FrameLayout
         android:id="@+id/container"
